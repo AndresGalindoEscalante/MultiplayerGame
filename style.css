@@ -70,7 +70,7 @@ body {
 }
 
 #marcadorJugador2 {
-    border: 10px solid rgb(55, 15, 217);
+    border: 10px solid rgb(81, 222, 5);
     border-style: double;
     border-radius: 10px;
     height: 25em;
@@ -86,11 +86,7 @@ body {
     text-align: center;
 }
 
-#reset{
-    border: 10px solid rgb(234, 145, 3);
-    border-style: double;
-    
-}
+
 
 p{
     font-size: xx-large;

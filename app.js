@@ -29,6 +29,13 @@ let contJugador1 = 0;
 let contJugador2 = 0;
 let contChoque = 0;
 
+pJ1.textContent = contJugador1;
+divJ1.appendChild(pJ1);
+pJ2.textContent = contJugador2;
+divJ2.appendChild(pJ2);
+pJC.textContent = contChoque;
+divJC.appendChild(pJC);
+
 
 
 document.addEventListener("load", inicio());
@@ -94,21 +101,18 @@ function casillasInit() {
 
     posXAgujero2 = coordenadaX(agujero2);
     posYAgujero2 = coordenadaY(agujero2);
-    // console.log(posXAgujero1);
-    // console.log(posYAgujero1);
+
 
 
 }
 
 function coordenadaX(casilla) {
-    let resul=casilla.id.substring(casilla.id.indexOf('c') + 1, casilla.id.length);
-    console.log(casilla.id+" :"+ resul);
+    let resul = casilla.id.substring(casilla.id.indexOf('c') + 1, casilla.id.length);
     return parseInt(resul);
 }
 
 function coordenadaY(casilla) {
-    let resul=casilla.id.substring(1, casilla.id.indexOf('c'));
-    console.log(casilla.id+" :"+ resul);
+    let resul = casilla.id.substring(1, casilla.id.indexOf('c'));
     return parseInt(resul);
 }
 
@@ -149,7 +153,6 @@ function juego() {
                 casillaJugador2.classList.remove('jugador2');
                 casillaJugador2 = document.getElementById(`f${posYJugador2}c${posXJugador2}`);
                 casillaJugador2.classList.add('jugador2');
-                console.log('1');
                 ganador('jugador2');
 
                 break;
@@ -248,7 +251,7 @@ function ganador(jugador) {
         pJC.textContent = contChoque;
         divJC.appendChild(pJC);
         reset();
-    } else if (jugador==='jugador1'&&casillaJugador1.classList.contains('agujero')) {
+    } else if (jugador === 'jugador1' && casillaJugador1.classList.contains('agujero')) {
         if (casillaJugador1 === agujero1) {
             casillaJugador1.classList.remove('jugador1');
             casillaJugador1 = document.getElementById(`f${posYAgujero2}c${posXAgujero2}`);
@@ -262,7 +265,7 @@ function ganador(jugador) {
             posYJugador1 = posYAgujero1;
             casillaJugador1.classList.add('jugador1');
         }
-    }else if (jugador==='jugador2'&&casillaJugador2.classList.contains('agujero')) {
+    } else if (jugador === 'jugador2' && casillaJugador2.classList.contains('agujero')) {
         if (casillaJugador2 === agujero1) {
             casillaJugador2.classList.remove('jugador2');
             casillaJugador2 = document.getElementById(`f${posYAgujero2}c${posXAgujero2}`);
