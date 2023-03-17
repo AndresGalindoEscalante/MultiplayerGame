@@ -64,7 +64,8 @@ body {
     border: 10px solid rgb(247, 18, 6);
     border-style: double;
     border-radius: 10px;
-    height: 6vh;
+    height: 25em;
+
     text-align: center;
 }
 
@@ -72,7 +73,7 @@ body {
     border: 10px solid rgb(55, 15, 217);
     border-style: double;
     border-radius: 10px;
-    height: 6vh;
+    height: 25em;
     text-align: center;
 }
 
@@ -80,12 +81,18 @@ body {
     border: 10px solid rgb(234, 145, 3);
     border-style: double;
     border-radius: 10px;
-    height: 6vh;
+    height: 25em;
+
     text-align: center;
 }
 
 #reset{
     border: 10px solid rgb(234, 145, 3);
     border-style: double;
+    
+}
 
+p{
+    font-size: xx-large;
+    background: linear-gradient(0deg,rgb(124, 65, 243),rgb(218, 75, 232));
 }
