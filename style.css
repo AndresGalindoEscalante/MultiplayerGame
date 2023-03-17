@@ -1,0 +1,91 @@
+.container {
+    display: grid;
+    grid-auto-rows: minmax(7vh, auto);
+    margin: 10px;
+}
+
+.card {
+    padding: 2vh;
+    border: 2px solid white;
+}
+
+.agujero{
+    background-image: url('img/agujero.jpg');
+    background-size: 7vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.meta {
+    background-image: url('img/meta.jpg');
+    background-size: 9vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.jugador1 {
+    background-image: url('img/jugador1.png');
+    background-size: 8vh;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.jugador2 {
+    background-image: url('img/jugador2.png');
+    background-size: 8vh;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+body {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    background-image: url('img/fondo.webp');
+    
+    background-repeat: no-repeat;
+    background-size:cover ;
+    /*Esto es para hacer que el texto dentro de las casillas no se pueda seleccionar*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#marcadorJugador1 {
+    border: 10px solid rgb(247, 18, 6);
+    border-style: double;
+    border-radius: 10px;
+    height: 6vh;
+    text-align: center;
+}
+
+#marcadorJugador2 {
+    border: 10px solid rgb(55, 15, 217);
+    border-style: double;
+    border-radius: 10px;
+    height: 6vh;
+    text-align: center;
+}
+
+#marcadorColisiones {
+    border: 10px solid rgb(234, 145, 3);
+    border-style: double;
+    border-radius: 10px;
+    height: 6vh;
+    text-align: center;
+}
+
+#reset{
+    border: 10px solid rgb(234, 145, 3);
+    border-style: double;
+
+}
